@@ -21,7 +21,7 @@ if (isset($_COOKIE['username']) && isset($_COOKIE['hash'])) {
   // cek cookie dan username
   if ($hash === hash('sha256', $row['id'], false)) {
     $_SESSION['username'] = $row['username'];
-    header("Location: adin.php");
+    header("Location: admin.php");
     exit;
   }
 }
