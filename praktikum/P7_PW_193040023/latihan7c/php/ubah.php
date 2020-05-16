@@ -34,42 +34,42 @@ if (isset($_POST['ubah'])) {
 <body>
   <h3><center> Form Ubah Data Buku </center> </h3>
   <form action="" method="POST">
-  <input type="hidden" name="id" id="id" value="<?= $row['id']; ?>">
+  <input type="hidden" name="id" id="id" value="<?= $buku['id']; ?>">
   <ul>
   <li>
   <label>
     Judul :
-    <input type="text" name="judul" id="judul"  required value="<?= $row['judul_buku']; ?>">
+    <input type="text" name="judul" id="judul"  required value="<?= $buku['judul_buku']; ?>">
   </label>  
   </li>
   <li>
   <label>
     Kategori :
-    <input type="text" name="kategori" id="kategori"  required value="<?= $row['kategori']; ?>">
+    <input type="text" name="kategori" id="kategori"  required value="<?= $buku['kategori']; ?>">
   </label>  
   </li>
   <li>
   <label>
     Author :
-    <input type="text" name="author" id="author"  required value="<?= $row['author']; ?>">
+    <input type="text" name="author" id="author"  required value="<?= $buku['author']; ?>">
   </label>  
   </li>
   <li>
   <label>
     Penerbit :
-    <input type="text" name="penerbit" id="penerbit"  required value="<?= $row['penerbit']; ?>">
+    <input type="text" name="penerbit" id="penerbit"  required value="<?= $buku['penerbit']; ?>">
   </label>  
   </li>
   <li>
   <label>
     Cover
-    <input type="text" name="cover" id="cover"  required value="<?= $row['cover']; ?>">
+    <input type="text" name="cover" id="cover"  required value="<?= $buku['cover']; ?>">
   </label>  
   </li>
   <li>
   <label>
     harga
-    <input type="text" name="harga" id="harga"  required value="<?= $row['harga']; ?>">
+    <input type="text" name="harga" id="harga"  required value="<?= $buku['harga']; ?>">
   </label>
   </li>
   <li>
