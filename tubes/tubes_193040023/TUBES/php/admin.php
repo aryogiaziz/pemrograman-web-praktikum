@@ -73,7 +73,7 @@ if (isset($_POST['cari'])) {
 
   <div class="row-mt-1pt-4 pr-2 pl-2 pb-3">
   <div class="col-md-2 pt-5 pl-5"></div>
-    <table border= "1" cellpadding="10" cellspacing="0">
+    <table border= "1" cellpadding="10" cellspacing="0" align="center">
       <tr>
           <th><center>No.<center></th>
           <th><center>Opsi<center></th>
@@ -83,7 +83,6 @@ if (isset($_POST['cari'])) {
           <th><center>Author<center></th>
           <th><center>Penerbit<center></th>
           <th><center>Harga<center></th>
-          <th><center>sinopsis<center></th>
       </tr>
       <?php if (empty($buku)) : ?>
         <tr>
@@ -107,7 +106,7 @@ if (isset($_POST['cari'])) {
           <td><?= $row["author"]; ?></td>
           <td><?= $row["penerbit"]; ?></td>
           <td><?= $row["harga"]; ?></td>
-          <td><?= $row["sinopsis"]; ?></td>
+
 
       </tr>
 

@@ -5,7 +5,7 @@
     $host     = 'localhost';
     $username = 'root';
     $password = '';
-    $db       = 'PWprak_193040023';
+    $db       = 'pwprak_193040023';
 
     $conn = mysqli_connect($host, $username, $password) or die("koneksi DB gagal");
     mysqli_select_db($conn, $db) or die("database tidak ditemukan");
@@ -124,7 +124,7 @@ function registrasi($data)
   $password = password_hash($password, PASSWORD_DEFAULT);
 
   // tambah user baru
-  $query_tambah = "INSERT INTO user VALUES('', '$username', '$password')";
+  $query_tambah = "INSERT INTO user VALUES(null, '$username', '$password')";
   mysqli_query($conn, $query_tambah);
 
   return mysqli_affected_rows($conn);
